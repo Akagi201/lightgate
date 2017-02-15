@@ -1,0 +1,4 @@
+http_listen = "0.0.0.0:8000"
+ws_listen = "0.0.0.0:8001"
+admin_http_listen = "0.0.0.0:8010"
+log_level = "info"
