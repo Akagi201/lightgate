@@ -1,6 +1,11 @@
 # LightGate
 
-A light weight API gateway
+[![Build Status](https://travis-ci.org/Akagi201/lightgate.svg)](https://travis-ci.org/Akagi201/lightgate)
+[![Coverage Status](https://coveralls.io/repos/github/Akagi201/lightgate/badge.svg?branch=master)](https://coveralls.io/github/Akagi201/lightgate?branch=master)
+[![Go Report Card](https://goreportcard.com/badge/github.com/Akagi201/lightgate)](https://goreportcard.com/report/github.com/Akagi201/lightgate)
+[![GoDoc](https://godoc.org/github.com/Akagi201/lightgate?status.svg)](https://godoc.org/github.com/Akagi201/lightgate)
+
+A light weight API gateway.
 
 ## Features
 
