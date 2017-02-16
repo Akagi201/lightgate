@@ -25,7 +25,11 @@ func init() {
 func init() {
 	parser := flags.NewParser(&opts, flags.Default)
 
-	parser.Parse()
+	_, err := parser.Parse()
+	if err != nil {
+		fmt.Printf("%v", err)
+		os.Exit(-1)
+	}
 
 	if opts.Conf != "" {
 		conflag.LongHyphen = true
@@ -36,10 +40,18 @@ func init() {
 			os.Exit(-1)
 		}
 		fmt.Printf("args: %v", args)
-		parser.ParseArgs(args)
+		_, err = parser.ParseArgs(args)
+		if err != nil {
+			fmt.Printf("%v", err)
+			os.Exit(-1)
+		}
 	}
 
-	//parser.Parse()
+	//_, err = parser.Parse()
+	//if err != nil {
+	//	fmt.Printf("%v", err)
+	//	os.Exit(-1)
+	//}
 }
 
 func init() {

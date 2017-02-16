@@ -33,5 +33,5 @@ func main() {
 		fwd.ServeHTTP(w, r)
 	})
 
-	http.ListenAndServe(opts.HTTPListenAddr, root)
+	logger.Fatalln(http.ListenAndServe(opts.HTTPListenAddr, root))
 }
