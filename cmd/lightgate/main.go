@@ -11,15 +11,6 @@ import (
 	"github.com/vulcand/oxy/testutils"
 )
 
-var opts struct {
-	Conf            string `long:"conf" default:"" description:"config file"`
-	AppName         string `long:"app_name" default:"lightgate" description:"application name"`
-	HTTPListenAddr  string `long:"http_listen" default:"0.0.0.0:8000" description:"HTTP listen address"`
-	WsListenAddr    string `long:"ws_listen" default:"0.0.0.0:8001" description:"WebSocket listen address"`
-	AdminListenAddr string `long:"admin_http_listen" default:"0.0.0.0:8010" description:"Admin HTTP listen address"`
-	LogLevel        string `long:"log_level" default:"info" description:"log level"`
-}
-
 func main() {
 	fwd, err := forward.New()
 	if err != nil {
